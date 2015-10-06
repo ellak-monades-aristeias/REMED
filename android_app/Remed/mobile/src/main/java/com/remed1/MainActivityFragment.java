@@ -1,4 +1,4 @@
-package org.remed;
+package com.remed1;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;

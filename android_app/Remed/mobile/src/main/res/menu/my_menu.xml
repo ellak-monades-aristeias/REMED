@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_menu"
+        android:title="@string/action_menu"
+        android:icon="@mipmap/ic_menu"
+        android:layout_gravity="left"
+        android:orderInCategory="1"
+        app:showAsAction="always"  >
+        <menu>
+            <item android:id="@+id/action_profile" android:title="@string/action_profile"
+                android:orderInCategory="1" app:showAsAction="always" />
+            <item android:id="@+id/action_pillbox" android:title="@string/action_pillbox"
+                android:orderInCategory="2" app:showAsAction="always" />
+            <item android:id="@+id/action_medications" android:title="@string/action_medications"
+                android:orderInCategory="3" app:showAsAction="always" />
+            <item android:id="@+id/action_missed_med" android:title="@string/action_missed_med"
+                android:orderInCategory="4" app:showAsAction="always" />
+            <item android:id="@+id/action_reports" android:title="@string/action_reports"
+                android:orderInCategory="5" app:showAsAction="always" />
+            <item android:id="@+id/action_settings" android:title="@string/action_settings"
+                android:orderInCategory="6" app:showAsAction="always" />
+            <item android:id="@+id/action_help" android:title="@string/action_help"
+                android:orderInCategory="7" app:showAsAction="always" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/user_profile"
+        android:title="@string/user_profile"
+        android:icon="@mipmap/ic_user"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/mis_med"
+        android:title="@string/mis_med"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+</menu>

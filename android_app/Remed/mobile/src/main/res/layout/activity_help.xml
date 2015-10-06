@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="USER MANUAL (pdf)"
+        android:id="@+id/tv7_1"
+        android:textColor="#0f0f0f"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="112dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail us any issues/bugs"
+        android:id="@+id/tv7_2"
+        android:textColor="#0f0f0f"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv7_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="141dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.google.com"
+        android:id="@+id/tv7_3"
+        android:layout_below="@+id/tv7_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:textSize="15dp" />
+
+</RelativeLayout>

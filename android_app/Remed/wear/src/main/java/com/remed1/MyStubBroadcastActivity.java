@@ -1,4 +1,4 @@
-package org.remed;
+package com.remed1;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,7 +13,7 @@ public class MyStubBroadcastActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         Intent i = new Intent();
-        i.setAction("org.remed.SHOW_NOTIFICATION");
+        i.setAction("com.remed1.SHOW_NOTIFICATION");
         i.putExtra(MyPostNotificationReceiver.CONTENT_KEY, getString(R.string.title));
         sendBroadcast(i);
         finish();

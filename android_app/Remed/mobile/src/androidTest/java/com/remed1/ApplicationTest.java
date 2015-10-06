@@ -1,4 +1,4 @@
-package org.remed;
+package com.remed1;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

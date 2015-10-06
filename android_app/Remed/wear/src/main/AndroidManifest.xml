@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.remed" >
+    package="com.remed1" >
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -30,7 +30,7 @@
             android:name=".MyPostNotificationReceiver"
             android:exported="true" >
             <intent-filter>
-                <action android:name="org.remed.SHOW_NOTIFICATION" />
+                <action android:name="com.remed1.SHOW_NOTIFICATION" />
             </intent-filter>
         </receiver>
     </application>

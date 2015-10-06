@@ -1,5 +1,64 @@
 <resources>
-    <string name="app_name">Remed</string>
+    <string name="app_name">Remed1</string>
     <string name="hello_world">Hello world!</string>
+
+    <string name="action_menu">Menu</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_pillbox">Pillbox</string>
+    <string name="action_medications">Medications</string>
+    <string name="action_missed_med">Missed Med</string>
+    <string name="action_reports">Reports</string>
     <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+
+    <string name="user_profile">User Profile</string>
+    <string name="mis_med">MisMed</string>
+    <string name="button1">Add/Edit/Remove Medications</string>
+
+    <string name="action_in">NAI!!!</string>
+
+    <string name="app_name_profile">Profile</string>
+    <string name="add_med">Add Med</string>
+    <string name="save_option">SAVE</string>
+    <string name="active_deactive">Activate/Deactivate Reminders for scheduled medications</string>
+    <string name="button_set_date">SET START DATE</string>
+    <string name="empty_string" />
+    <string name="set_days">SET DAYS</string>
+
+    <string-array name="medTimes">
+        <item>Once a day</item>
+        <item>Twice a day</item>
+        <item>3 times a day</item>
+        <item>4 times a day</item>
+        <item>5 times a day</item>
+        <item>6 times a day</item>
+        <item>7 times a day</item>
+        <item>8 times a day</item>
+    </string-array>
+
+
+    <string-array name="PillDosage">
+        <item>Pills</item>
+        <item>Cc</item>
+        <item>Ml</item>
+        <item>Gr</item>
+        <item>Mg</item>
+        <item>Drops</item>
+        <item>Pieces</item>
+        <item>Puffs</item>
+        <item>Units</item>
+        <item>Teaspoon</item>
+        <item>Tablespoon</item>
+        <item>Patch</item>
+        <item>Mcg</item>
+        <item>lu</item>
+        <item>meq</item>
+    </string-array>
+
+    <string-array name="medInstructions">
+        <item>Before food</item>
+        <item>With food</item>
+        <item>After food</item>
+    </string-array>
+
 </resources>

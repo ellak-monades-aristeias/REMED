@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.remed" >
+    package="com.remed1" >
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MyProfile"></activity>
+        <activity android:name=".MyPillbox"></activity>
+        <activity android:name=".MyMedications"></activity>
+        <activity android:name=".MyMissedmed"></activity>
+        <activity android:name=".MyReports"></activity>
+        <activity android:name=".MySettings"></activity>
+        <activity android:name=".MyHelp"></activity>
+        <activity android:name=".MyAddmed"></activity>
     </application>
 
 </manifest>

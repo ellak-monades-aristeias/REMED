@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="REMINDERS"
+        android:id="@+id/tv6_1"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Medication reminders"
+        android:id="@+id/tv6_2"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Missed Meds reminders"
+        android:id="@+id/tv6_3"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Take your pills with you reminder"
+        android:id="@+id/tv6_4"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICATIONS"
+        android:id="@+id/tv6_5"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Sound"
+        android:id="@+id/tv6_6"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Vibrate"
+        android:id="@+id/tv6_7"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Led light"
+        android:id="@+id/tv6_8"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PILLBOX SETUP"
+        android:id="@+id/tv6_9"
+        android:textColor="#0f0f0f"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
