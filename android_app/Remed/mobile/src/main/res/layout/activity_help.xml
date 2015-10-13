@@ -33,11 +33,20 @@
         android:layout_height="wrap_content"
         android:text="http://www.google.com"
         android:id="@+id/tv7_3"
-        android:layout_below="@+id/tv7_2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="44dp"
         android:autoLink="all"
         android:clickable="true"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_below="@+id/tv7_2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open PDF"
+        android:id="@+id/b7_1"
+        android:layout_gravity="center"
+        android:layout_below="@+id/tv7_1"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

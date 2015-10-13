@@ -20,10 +20,20 @@
     <string name="app_name_profile">Profile</string>
     <string name="add_med">Add Med</string>
     <string name="save_option">SAVE</string>
+    <string name="edit_option">EDIT</string>
+    <string name="remove_option">REMOVE</string>
     <string name="active_deactive">Activate/Deactivate Reminders for scheduled medications</string>
     <string name="button_set_date">SET START DATE</string>
     <string name="empty_string" />
     <string name="set_days">SET DAYS</string>
+    <string name="button_set_time">SET TIME</string>
+    <string name="shape_color">Shape and Color</string>
+    <string name="button_set_shape">SET SHAPE</string>
+    <string name="button_set_color">SET COLOR</string>
+    <string name="view_my_meds">View My Meds</string>
+    <string name="edit_med">Edit Med</string>
+    <string name="add_user_profile">Add User Profile</string>
+
 
     <string-array name="medTimes">
         <item>Once a day</item>
@@ -60,5 +70,93 @@
         <item>With food</item>
         <item>After food</item>
     </string-array>
+
+
+
+    <array name="Image_Shape">
+        <item>@mipmap/unspecified</item>
+        <item>@mipmap/round</item>
+        <item>@mipmap/capsule</item>
+        <item>@mipmap/oval</item>
+        <item>@mipmap/egg</item>
+        <item>@mipmap/barrel</item>
+        <item>@mipmap/rectangle</item>
+        <item>@mipmap/s3sided</item>
+        <item>@mipmap/s4sided</item>
+        <item>@mipmap/s5sided</item>
+        <item>@mipmap/s6sided</item>
+        <item>@mipmap/s7sided</item>
+        <item>@mipmap/s8sided</item>
+        <item>@mipmap/ushaped</item>
+        <item>@mipmap/figure8</item>
+        <item>@mipmap/heart</item>
+        <item>@mipmap/kidney</item>
+        <item>@mipmap/gear</item>
+        <item>@mipmap/character</item>
+
+
+
+    </array>
+
+    <string-array name="Shapes">
+        <item>Unspecified</item>
+        <item>Round</item>
+        <item>Capsule</item>
+        <item>Oval</item>
+        <item>Egg</item>
+        <item>Barrel</item>
+        <item>Rectangle</item>
+        <item>3 Sided</item>
+        <item>4 Sided</item>
+        <item>5 Sided</item>
+        <item>6 Sided</item>
+        <item>7 Sided</item>
+        <item>8 Sided</item>
+        <item>U Shaped</item>
+        <item>Figure 8</item>
+        <item>Heart</item>
+        <item>Kidney</item>
+        <item>Gear</item>
+        <item>Character</item>
+</string-array>
+
+    <string-array name="Color_Names">
+        <item>blue</item>
+        <item>purple</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>red</item>
+        <item>darkblue</item>
+        <item>darkpurple</item>
+        <item>darkgreen</item>
+        <item>darkorange</item>
+        <item>darkred</item>
+    </string-array>
+
+
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+
 
 </resources>

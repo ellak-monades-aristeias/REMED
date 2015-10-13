@@ -2,11 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Profile Activity"
-        android:id="@+id/v1"
-        android:layout_gravity="center_vertical" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tv"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_user_profile"
+            android:id="@+id/b1_1"
+            android:layout_gravity="bottom"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            android:onClick="onb1_1Click"
+            style="?android:attr/buttonStyleSmall"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Infos"
+            android:id="@+id/b1_2"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/buttonStyleSmall"
+            android:visibility="visible"
+            android:onClick="onb1_2Click"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
 </LinearLayout>

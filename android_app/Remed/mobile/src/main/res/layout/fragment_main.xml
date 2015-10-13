@@ -1,16 +1,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivityFragment"
-    android:clickable="true">
+    tools:context=".MainActivityFragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:layout_above="@+id/main_buttton"
+        android:clickable="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button1"
-        android:id="@+id/button1"
+        android:id="@+id/main_buttton"
         android:layout_gravity="bottom"
         android:layout_alignParentTop="false"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:onClick="onmain_buttonClick"
+        android:textSize="20dp"
+        style="?android:attr/buttonStyleSmall" />
+
 </RelativeLayout>

@@ -24,6 +24,8 @@
         <activity android:name=".MySettings"></activity>
         <activity android:name=".MyHelp"></activity>
         <activity android:name=".MyAddmed"></activity>
+        <activity android:name=".MyMakeUserProfile"></activity>
+
     </application>
 
 </manifest>

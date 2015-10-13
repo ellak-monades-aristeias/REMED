@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:layout_width="fill_parent"
@@ -23,6 +23,25 @@
                 android:textColor="#fdfdfe"
                 android:textStyle="bold|italic"
                 android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:id="@+id/tvid"
+                    android:textColor="#2c51fd"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,13 +114,27 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/button_set_time"
+                android:onClick="setTime"
+                android:id="@+id/b3_1_6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_string"
+                android:id="@+id/tv3_1_9" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/set_days"
                 android:id="@+id/b3_1_3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shape and Color"
+                android:text="@string/shape_color"
                 android:id="@+id/tv3_1_6"
                 android:textColor="#2c51fd"
                 android:textStyle="bold"
@@ -110,41 +143,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="1" >
+                android:weightSum="1">
 
-                <Button
-                    style="?android:attr/buttonStyleSmall"
+                <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SET SHAPE"
-                    android:id="@+id/b3_1_4"
-                    android:layout_weight="0.50" />
+                    android:id="@+id/spinner3_1_4"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="0.50"/>
+                   <!-- android:entries="@array/Shapes" -->
 
-                <Button
-                    style="?android:attr/buttonStyleSmall"
+
+                <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SET COLOR"
-                    android:id="@+id/b3_1_5"
-                    android:layout_weight="0.50" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:weightSum="1" >
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner3_1_5"
+                    android:spinnerMode="dropdown"
                     android:layout_weight="0.50"
-                    android:id="@+id/image3_1_1" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.50"
-                    android:id="@+id/image3_1_2" />
+                    />
             </LinearLayout>
 
             <TextView
@@ -158,11 +175,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="match_parent">
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.50"
                     android:id="@+id/editText2"
@@ -177,7 +193,7 @@
                     android:layout_weight="0.50"
                     android:id="@+id/spinner3_1_2"
                     android:spinnerMode="dropdown"
-                    android:entries="@array/medTimes" />
+                    android:entries="@array/PillDosage" />
 
             </LinearLayout>
 
