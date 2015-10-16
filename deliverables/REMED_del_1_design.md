@@ -44,71 +44,6 @@ Released 30-08-2015
 
  
 
-**Contents**
-============
-
- 
-
-[Executive Summary. 3](<#_Toc428537098>)
-
-[Designing Effective Navigation for android apps. 4](<#_Toc428537099>)
-
-[Desired functionalities. 4](<#_Toc428537100>)
-
-[Diagram Screen Relationships. 4](<#_Toc428537101>)
-
-[How information in different screens interacts. 5](<#_Toc428537102>)
-
-[Home. 6](<#_Toc428537103>)
-
-[Menu. 7](<#_Toc428537104>)
-
-[Medications screen. 8](<#_Toc428537105>)
-
-[Add medication. 9](<#_Toc428537106>)
-
-[Medication name. 9](<#_Toc428537107>)
-
-[Reminder Times. 10](<#_Toc428537108>)
-
-[Schedule. 10](<#_Toc428537109>)
-
-[Shape and colour. 11](<#_Toc428537110>)
-
-[Dosage. 11](<#_Toc428537111>)
-
-[Instructions. 12](<#_Toc428537112>)
-
-[Missed Med. 13](<#_Toc428537113>)
-
-[Reports. 14](<#_Toc428537114>)
-
-[Settings. 15](<#_Toc428537115>)
-
-[Medications reminders. 15](<#_Toc428537116>)
-
-[Sound. 15](<#_Toc428537117>)
-
-[Help. 16](<#_Toc428537118>)
-
-[Design Principles for Android Wear. 17](<#_Toc428537119>)
-
-[Bridged Notifications. 17](<#_Toc428537120>)
-
-[Creating a Notification for Wearables. 18](<#_Toc428537121>)
-
-[Import the necessary classes. 18](<#_Toc428537122>)
-
-[Create Notifications with the Notification Builder. 18](<#_Toc428537123>)
-
-[Add Action Buttons. 19](<#_Toc428537124>)
-
-[Specify Wearable-only Actions. 19](<#_Toc428537125>)
-
-[Add a Big View.. 20](<#_Toc428537126>)
-
-[Deliver the Notification. 21](<#_Toc428537127>)
-
  
 
  
@@ -132,9 +67,6 @@ implementing notifications in android wear are also presented.
  
 
  
-
-  
-
 
  
 
@@ -179,9 +111,9 @@ reachable via some user interaction in screen A. More screens are presented in
 the next sections in order to provide the necessary functionality and include
 the information needed for easy navigation.
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png>)
-
  
+
+![](<../../../../Desktop/remed/design deliverable figures/diagram 1.png>)
 
  
 
@@ -209,7 +141,11 @@ Reports expose patient’s adherence to the prescribed medications.
 Info about med presents current user settings for a medication and add med
 enables the user to add newly prescribed medications.
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image004.png>)
+ 
+
+![](<../../../../Desktop/remed/design deliverable figures/diagram 2.png>)
+
+ 
 
  
 
@@ -231,14 +167,11 @@ well as remove or edit their details
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image006.png>)
-
-Figure 1: Home screen
-
  
 
-  
+![](<../../../../Desktop/remed/design deliverable figures/fig 1.png>)
 
+ 
 
  
 
@@ -252,12 +185,15 @@ screens than a screen itself.
 In the following these screens and what functionality should be provided by them
 will be thoroughly presented.
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image008.png>)
+ 
 
-Figure 2: Menu screen
+ 
 
-  
+![](<../../../../Desktop/remed/design deliverable figures/fig 2.png>)
 
+ 
+
+ 
 
  
 
@@ -266,14 +202,15 @@ Medications screen
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image010.png>)
+ 
+
+![](<../../../../Desktop/remed/design deliverable figures/fig 3.png>)
 
 Figure 3: Medications screen
 
  
 
-  
-
+ 
 
  
 
@@ -282,7 +219,9 @@ Add medication
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image012.png>)
+ 
+
+![](<../../../../Desktop/remed/design deliverable figures/fig 4.png>)
 
 Figure 4: Add medication screens with all the choices the user should have
 
@@ -305,9 +244,11 @@ list and not write free text.
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image014.jpg>)
+ 
 
-Figure 5: List with commercially available medications in Greece
+![](<../../../../Desktop/remed/design deliverable figures/fig 5.png>)
+
+ 
 
  
 
@@ -361,7 +302,11 @@ medications as those presented in the figure below.
 What is needed are two galleries one with different shapes and a second with the
 colors.
 
-![Description: Colorful Capsules & Pills Vector](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image015.jpg>)
+![](<../../../../Desktop/remed/design deliverable figures/pills.png>)
+
+ 
+
+ 
 
  
 
@@ -415,9 +360,6 @@ instructions choosing from a simple list:
 
  
 
-  
-
-
  
 
 Missed Med
@@ -431,9 +373,9 @@ and prescribing clinicians can give reliable instructions to the users and the
 scope of this screen is only to inform the user and not advise him/ her what to
 do with missed dosages.
 
- 
+![](<../../../../Desktop/remed/design deliverable figures/fig missed med.png>)
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image017.png>)
+ 
 
  
 
@@ -444,12 +386,13 @@ Reports
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image019.png>)
+![](<../../../../Desktop/remed/design deliverable figures/fig reports.png>)
 
  
 
-  
+ 
 
+ 
 
  
 
@@ -458,11 +401,15 @@ Settings
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image021.png>)
+![](<../../../../Desktop/remed/design deliverable figures/fig settings.png>)
 
  
 
-### Medications reminders 
+ 
+
+ 
+
+### Medications reminders
 
 The user should be able to set:
 
@@ -493,19 +440,16 @@ Help
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image023.png>)
+![](<../../../../Desktop/remed/design deliverable figures/fig help.png>)
 
  
 
  
 
-  
-
-
  
 
-Design Principles for Android Wear[[1]](<#_ftn1>)
-=================================================
+Design Principles for Android Wear
+==================================
 
  
 
@@ -554,13 +498,10 @@ This is the simplest way to get on Android Wear. In fact, your app already does
 this if it uses notifications. You can add Wear-specific features like extra
 pages and voice replies by using the new notification APIs.
 
-  
-
-
  
 
-Creating a Notification for Wearables[[2]](<#_ftn2>)
-----------------------------------------------------
+Creating a Notification for Wearables
+-------------------------------------
 
 To build handheld notifications that are also sent to wearables,
 use [NotificationCompat.Builder](<https://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html>).
@@ -604,19 +545,19 @@ int notificationId = 001;
 Intent viewIntent = new Intent(this, ViewEventActivity.class);  
 viewIntent.putExtra(EXTRA\_EVENT\_ID, eventId);  
 PendingIntent viewPendingIntent =  
-        PendingIntent.getActivity(this, 0, viewIntent, 0);  
-  
+        PendingIntent.getActivity(this, 0, viewIntent, 0);
+
 NotificationCompat.Builder notificationBuilder =  
         new NotificationCompat.Builder(this)  
         .setSmallIcon(R.drawable.ic\_event)  
         .setContentTitle(eventTitle)  
         .setContentText(eventLocation)  
-        .setContentIntent(viewPendingIntent);  
-  
+        .setContentIntent(viewPendingIntent);
+
 // Get an instance of the NotificationManager service  
 NotificationManagerCompat notificationManager =  
-        NotificationManagerCompat.from(this);  
-  
+        NotificationManagerCompat.from(this);
+
 // Build the notification and issues it with notification manager.  
 notificationManager.notify(notificationId, notificationBuilder.build());
 
@@ -648,8 +589,8 @@ Intent mapIntent = new Intent(Intent.ACTION\_VIEW);
 Uri geoUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));  
 mapIntent.setData(geoUri);  
 PendingIntent mapPendingIntent =  
-        PendingIntent.getActivity(this, 0, mapIntent, 0);  
-  
+        PendingIntent.getActivity(this, 0, mapIntent, 0);
+
 NotificationCompat.Builder notificationBuilder =  
         new NotificationCompat.Builder(this)  
         .setSmallIcon(R.drawable.ic\_event)  
@@ -682,14 +623,14 @@ on the wearable and they do not appear on the handheld.
 Intent actionIntent = new Intent(this, ActionActivity.class);  
 PendingIntent actionPendingIntent =  
         PendingIntent.getActivity(this, 0, actionIntent,  
-                PendingIntent.FLAG\_UPDATE\_CURRENT);  
-  
+                PendingIntent.FLAG\_UPDATE\_CURRENT);
+
 // Create the action  
 NotificationCompat.Action action =  
         new NotificationCompat.Action.Builder(R.drawable.ic\_action,  
                 getString(R.string.label), actionPendingIntent)  
-                .build();  
-  
+                .build();
+
 // Build the notification and add the action via WearableExtender  
 Notification notification =  
         new NotificationCompat.Builder(mContext)  
@@ -724,8 +665,8 @@ the event notification, in order to include the complete event description
 // Specify the 'big view' content to display the long  
 // event description that may not fit the normal content text.  
 BigTextStyle bigStyle = new NotificationCompat.BigTextStyle();  
-bigStyle.bigText(eventDescription);  
-  
+bigStyle.bigText(eventDescription);
+
 NotificationCompat.Builder notificationBuilder =  
         new NotificationCompat.Builder(this)  
         .setSmallIcon(R.drawable.ic\_event)  
@@ -760,8 +701,8 @@ instead of
 
 // Get an instance of the NotificationManager service  
 NotificationManagerCompat notificationManager =  
-        NotificationManagerCompat.from(mContext);  
-  
+        NotificationManagerCompat.from(mContext);
+
 // Issue the notification with notification manager.  
 notificationManager.notify(notificationId, notif);
 
@@ -777,10 +718,3 @@ use [NotificationCompat](<https://developer.android.com/reference/android/suppo
  
 
  
-
-[[1]](<#_ftnref1 https://developer.android.com/design/wear/principles.html>)
-<https://developer.android.com/design/wear/principles.html>
-
-[[2]](<#_ftnref2
-https://developer.android.com/training/wearables/notifications/creating.html>)
-<https://developer.android.com/training/wearables/notifications/creating.html>
