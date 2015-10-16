@@ -38,9 +38,6 @@ Funded by Μονάδες Αριστείας Ανοιχτού Λογισμικο�
 
 Released 30-09-2015
 
-  
-
-
  
 
  
@@ -68,9 +65,6 @@ our objective for the next months.
 
  
 
-  
-
-
  
 
 **Table of Figures**
@@ -95,8 +89,8 @@ added medications.](<#_Toc432668818>)
 
 [Figure 7: View a single medication with more details.](<#_Toc432668820>)
 
-[Figure 8: the user finds the medication by name and then removes it.
-](<#_Toc432668821>)
+[Figure 8: the user finds the medication by name and then removes
+it.](<#_Toc432668821>)
 
 [Figure 9: Edit/ Update medication screen; the user can modify whatever he/ she
 needs to in an imported medication and then selects the EDIT
@@ -142,9 +136,6 @@ adherence.](<#_Toc432668833>)
 [Figure 22: Help screen with this user manual (in pdf) and contact
 details.](<#_Toc432668835>)
 
-  
-
-
  
 
 User Manual
@@ -152,7 +143,7 @@ User Manual
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 1.png>)
+![](<../figures/manual figures/fig 1.png>)
 
 Figure 1: the home screen with all the basic functionalities
 
@@ -164,13 +155,7 @@ Figure 1: the home screen with all the basic functionalities
 
  
 
- 
-
- 
-
- 
-
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 2.png>)
+![](<../figures/manual figures/fig 2.png>)
 
 Figure 2: the menu that includes all the designed screens
 
@@ -180,7 +165,9 @@ Figure 2: the menu that includes all the designed screens
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 3.png>)
+ 
+
+![](<../figures/manual figures/fig 3.png>)
 
 Figure 3: The profile screen; buggy at the moment, when fixed the user will be
 able to see his/her profile
@@ -191,7 +178,7 @@ able to see his/her profile
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 4.png>)
+![](<../figures/manual figures/fig 4.png>)
 
 Figure 4: the medications screen; the user is able to remove, edit, add or just
 see his/ her medications
@@ -200,7 +187,9 @@ see his/ her medications
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 5.png>)
+ 
+
+![](<../figures/manual figures/fig 5.png>)
 
 Figure 5: The Pillbox; it will be enriched, currently shows a list with the
 added medications
@@ -211,7 +200,7 @@ added medications
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 6.png>)
+![](<../figures/manual figures/fig 6.png>)
 
 Figure 6: Viewing the list of medications with more details
 
@@ -221,20 +210,17 @@ Figure 6: Viewing the list of medications with more details
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 7.png>)
+![](<../figures/manual figures/fig 7.png>)
 
 Figure 7: View a single medication with more details
 
  
 
-  
-
-
  
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 8.png>)
+![](<../figures/manual figures/fig 8.png>)
 
 Figure 8: the user finds the medication by name and then removes it
 
@@ -244,7 +230,9 @@ Figure 8: the user finds the medication by name and then removes it
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 9.png>)
+ 
+
+![](<../figures/manual figures/fig 9.png>)
 
 Figure 9: Edit/ Update medication screen; the user can modify whatever he/ she
 needs to in an imported medication and then selects the EDIT button
@@ -255,7 +243,7 @@ needs to in an imported medication and then selects the EDIT button
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 10.png>)
+![](<../figures/manual figures/fig 10.png>)
 
 Figure 10: The user can add a new medication and define all parameters that are
 analysed in the next screenshots. When he is over he selects the SAVE button
@@ -266,7 +254,7 @@ analysed in the next screenshots. When he is over he selects the SAVE button
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 11.png>)
+![](<../figures/manual figures/fig 11.png>)
 
 Figure 11: The reminders time drop down list available when adding or editing a
 medication
@@ -277,7 +265,9 @@ medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 12.png>)
+ 
+
+![](<../figures/manual figures/fig 12.png>)
 
 Figure 12: The set start date, i.e. the first date you are taking a new
 medication, drop down list available when adding or editing a medication
@@ -288,7 +278,7 @@ medication, drop down list available when adding or editing a medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 13.png>)
+![](<../figures/manual figures/fig 13.png>)
 
 Figure 13: The set time drop down list available when adding or editing a
 medication
@@ -299,7 +289,7 @@ medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 14.png>)
+![](<../figures/manual figures/fig 14.png>)
 
 Figure 14: The set days (that the user will be taking a medication) drop down
 list available when adding or editing a medication
@@ -310,7 +300,7 @@ list available when adding or editing a medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 15.png>)
+![](<../figures/manual figures/fig 15.png>)
 
 Figure 15: The shape of pills drop down list available when adding or editing a
 medication
@@ -321,7 +311,7 @@ medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 16.png>)
+![](<../figures/manual figures/fig 16.png>)
 
 Figure 16: The colour of pills drop down list available when adding or editing a
 medication
@@ -334,7 +324,7 @@ medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 17.png>)
+![](<../figures/manual figures/fig 17.png>)
 
 Figure 17: The type of medication drop down list available when adding or
 editing a medication
@@ -347,7 +337,7 @@ editing a medication
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 18.png>)
+![](<../figures/manual figures/fig 18.png>)
 
 Figure 18:  The instructions drop down list available when adding or editing a
 medication
@@ -358,22 +348,19 @@ medication
 
  
 
- 
-
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 19.png>)
+![](<../figures/manual figures/fig 19.png>)
 
 Figure 19: The missed medications screen
 
-  
-
-
  
 
  
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 20.png>)
+ 
+
+![](<../figures/manual figures/fig 20.png>)
 
 Figure 20: Reports are ongoing work; when ready it will provide stats with
 adherence
@@ -384,7 +371,7 @@ adherence
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 21.png>)
+![](<../figures/manual figures/fig 21.png>)
 
 Figure 21: The settings screen
 
@@ -396,7 +383,7 @@ Figure 21: The settings screen
 
  
 
-![](<C:/Users/medlab1/Desktop/remed/manual figures/fig 22.png>)
+![](<../figures/manual figures/fig 22.png>)
 
 Figure 22: Help screen with this user manual (in pdf) and contact details
 

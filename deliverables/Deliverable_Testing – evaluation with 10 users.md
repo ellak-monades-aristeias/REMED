@@ -74,9 +74,6 @@ preparing a market-ready app is within our interests.
 
  
 
-  
-
-
  
 
 The System Usability Scale (SUS)
@@ -192,25 +189,11 @@ results involves “normalizing” the scores to produce a percentile ranking.
 
  
 
- 
-
- 
-
- 
-
 **Our online**
 <https://docs.google.com/forms/d/1wycB22e1BSk_GBbmH7x_0rJrcdlLd_Uu_ycFVbVbUoA/viewform>
-** SUS questionnaire is depicted below.**  
+** SUS questionnaire **
 
-
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image004.jpg>)
-
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image006.jpg>)
-
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image008.jpg>)
-
-** **  
-
+ 
 
  
 
@@ -269,34 +252,18 @@ which is beyond the scope of this project.
 
 **Our online**
 <https://docs.google.com/forms/d/15_Iokes77oNtcCoHns5sr7cCiiRdFEzUGc-i9sXP6mw/viewform>
-**SUMI questionnaire is depicted below.**
+**SUMI questionnaire **
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image010.jpg>)
-
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image012.jpg>)
-
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image014.jpg>)
-
-  
-  
-
-
-  
-
-
  
-
-  
-
 
 Usability evaluation
 ====================
 
 The overall usability evaluation is depicted in the table below
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image016.png>)
+![](<../../../../Desktop/remed/evaluation figures/SUS total.png>)
 
  
 
@@ -324,12 +291,7 @@ learn some things before being able to use it.
 
  
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image018.png>)
-
- 
-
-  
-
+![](<../../../../Desktop/remed/evaluation figures/SUS average.png>)
 
  
 
@@ -339,9 +301,7 @@ The overall satisfaction of the users is depicted in the table below
 
 The order of the users is the same as above with SUS.
 
-![](<file:///C:\Users\medlab1\AppData\Local\Temp\msohtmlclip1\01\clip_image020.png>)
-
- 
+![](<../../../../Desktop/remed/evaluation figures/SUMI total.png>)
 
 The encouraging conclusions are:
 

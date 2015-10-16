@@ -111,9 +111,7 @@ reachable via some user interaction in screen A. More screens are presented in
 the next sections in order to provide the necessary functionality and include
 the information needed for easy navigation.
 
- 
-
-![](<../../../../Desktop/remed/design deliverable figures/diagram 1.png>)
+![](<../figures/design deliverable figures/diagram 1.png>)
 
  
 
@@ -141,9 +139,7 @@ Reports expose patient’s adherence to the prescribed medications.
 Info about med presents current user settings for a medication and add med
 enables the user to add newly prescribed medications.
 
- 
-
-![](<../../../../Desktop/remed/design deliverable figures/diagram 2.png>)
+![](<../figures/design deliverable figures/diagram 2.png>)
 
  
 
@@ -165,11 +161,9 @@ immediately check next medication due as well as for the whole day
 ·         The add medications button which enables the user add medications, as
 well as remove or edit their details
 
- 
+![](<../figures/design deliverable figures/fig 1.png>)
 
  
-
-![](<../../../../Desktop/remed/design deliverable figures/fig 1.png>)
 
  
 
@@ -185,11 +179,7 @@ screens than a screen itself.
 In the following these screens and what functionality should be provided by them
 will be thoroughly presented.
 
- 
-
- 
-
-![](<../../../../Desktop/remed/design deliverable figures/fig 2.png>)
+![](<../figures/design deliverable figures/fig 2.png>)
 
  
 
@@ -202,11 +192,9 @@ Medications screen
 
  
 
+![](<../figures/design deliverable figures/fig 3.png>)
+
  
-
-![](<../../../../Desktop/remed/design deliverable figures/fig 3.png>)
-
-Figure 3: Medications screen
 
  
 
@@ -219,11 +207,11 @@ Add medication
 
  
 
+![](<../figures/design deliverable figures/fig 4.png>)
+
  
 
-![](<../../../../Desktop/remed/design deliverable figures/fig 4.png>)
-
-Figure 4: Add medication screens with all the choices the user should have
+ 
 
  
 
@@ -242,11 +230,9 @@ From this file we can extract the names, type (syrup, tablet etc.), content and
 drastic substance and thus the user will be able to choose from a structured
 list and not write free text.
 
- 
+![](<../figures/design deliverable figures/fig 5.png>)
 
  
-
-![](<../../../../Desktop/remed/design deliverable figures/fig 5.png>)
 
  
 
@@ -302,9 +288,7 @@ medications as those presented in the figure below.
 What is needed are two galleries one with different shapes and a second with the
 colors.
 
-![](<../../../../Desktop/remed/design deliverable figures/pills.png>)
-
- 
+![](<../figures/design deliverable figures/pills.png>)
 
  
 
@@ -373,9 +357,7 @@ and prescribing clinicians can give reliable instructions to the users and the
 scope of this screen is only to inform the user and not advise him/ her what to
 do with missed dosages.
 
-![](<../../../../Desktop/remed/design deliverable figures/fig missed med.png>)
-
- 
+![](<../figures/design deliverable figures/fig missed med.png>)
 
  
 
@@ -386,9 +368,7 @@ Reports
 
  
 
-![](<../../../../Desktop/remed/design deliverable figures/fig reports.png>)
-
- 
+![](<../figures/design deliverable figures/fig reports.png>)
 
  
 
@@ -401,9 +381,7 @@ Settings
 
  
 
-![](<../../../../Desktop/remed/design deliverable figures/fig settings.png>)
-
- 
+![](<../figures/design deliverable figures/fig settings.png>)
 
  
 
@@ -440,9 +418,7 @@ Help
 
  
 
-![](<../../../../Desktop/remed/design deliverable figures/fig help.png>)
-
- 
+![](<../figures/design deliverable figures/fig help.png>)
 
  
 
