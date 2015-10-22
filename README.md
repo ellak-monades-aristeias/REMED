@@ -62,6 +62,7 @@ smartphones, αν και παγκοσμίως αυτή η τάση έχει αρ
 
 Manual: 
 <https://github.com/ellak-monades-aristeias/REMED/blob/master/deliverables/Deliverable_App%20implementation%20for%20Android4.4%20and%20above%20%E2%80%93%20User%20Manual.md>
+
 Source code:
 <https://github.com/ellak-monades-aristeias/REMED/tree/master/android_app/Remed>
 
