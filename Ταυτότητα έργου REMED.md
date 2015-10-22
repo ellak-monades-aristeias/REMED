@@ -56,6 +56,10 @@ Smartphone με Android 4.4. and above.
 
 <https://github.com/ellak-monades-aristeias/REMED/> 
 
+
+
+**References**
+
 [[1]](<#_ftnref1>) https://www.android.com/wear/
 
 [[2]](<#_ftnref2>)
