@@ -1,3 +1,5 @@
+ 
+
 Το έργο REMED (**RE**mind me my **MED**ications) αφορά την υλοποίηση μιας δωρεάν
 εφαρμογής για Android, συμβατής με smart-watches που λειτουργούν με το Android
 Wear[[1]](<#_ftn1>) με σκοπό την βελτίωση της συμμόρφωσης των ασθενών στις
@@ -15,13 +17,13 @@ Wear[[1]](<#_ftn1>) με σκοπό την βελτίωση της συμμόρ�
 smartphones, αν και παγκοσμίως αυτή η τάση έχει αρχίσει να
 διαφοροποιείται[[4]](<#_ftn4>).
 
-Η λύση θα αναπτυχθεί με τα Open Source Tools του Android[[5]](<#_ftn5>) και τις
+Η λύση αναπτύχθηκε με τα Open Source Tools του Android[[5]](<#_ftn5>) και τις
 οδηγίες για την υπολοίηση εφαρμογών για φορέσιμες συσκευές[[6]](<#_ftn6>). Οι
 σχετικές κοινότητες developers είναι τεράστιες και εξασφαλίζουν εν πολλοίς την
-υποστήριξη της συσκεκριμένης, προτεινόμενης υλοποίησης.
+υποστήριξη της συγκεκριμένης, προτεινόμενης υλοποίησης.
 
-Σε επίπεδο λειτουργίας η εφαρμογή στο smartphone (remed app) θα επιτρέπει στον
-χρήστη (τουλάχιστον) να:
+Σε επίπεδο λειτουργίας η εφαρμογή στο smartphone (remed app) επιτρέπει στον
+χρήστη να:
 
 -   Επιλέξει το φάρμακο από μια έτοιμη λίστα που περιλαμβάνει όλα τα φάρμακα που
     είναι διαθέσιμα στα Ελληνικά φαρμακεία. Η λίστα αυτή διατίθεται από τον
@@ -33,29 +35,50 @@ smartphones, αν και παγκοσμίως αυτή η τάση έχει αρ
 -   Ορίζει την δοσολογία (π.χ. μισό χάπι) , να επιλέγει τον τύπο της αγωγής
     (π.χ. κίτρινο χάπι) και να γράφει κάποιες απλές οδηγίες (π.χ. πιες το με
     χυμό πορτοκάλι) για να είναι εύκολο, προφανές και χωρίς ορολογίες το τι
-    ακριβώς πρέπει να κάνει ο ασθενής (εικόνα 1). Θα μπορεί επίσης να επιλέξει
-    την ακριβή ώρα της ημέρας που θα πρέπει να υπενθυμίζεται ο ασθενής να
-    παίρνει τα φάρμακά του ώστε να γίνεται υπενθύμιση μέσω του συγχρονισμένου
-    smart-watch (εικόνα 1).
+    ακριβώς πρέπει να κάνει ο ασθενής. Θα μπορεί επίσης να επιλέξει την ακριβή
+    ώρα της ημέρας που θα πρέπει να υπενθυμίζεται ο ασθενής να παίρνει τα
+    φάρμακά του ώστε να γίνεται υπενθύμιση μέσω του συγχρονισμένου smart-watch
+    (on-going work).
 
 -   Προβάλει στατιστικά με την συμμόρφωση του εβδομαδιαία ή μηνιαία, τα οποία θα
     αποτελούν χρήσιμη πληροφορία και για τον γιατρό που τον παρακολουθεί.
 
  
 
-Το έργο θα περιλαμβάνει τα εξής
+ 
 
--   Week 1  (24/8 - 29/8): Σχεδιασμός για smartphone και smart-watch
-    (περιορισμοί λόγω της μικρής οθόνης) – ορισμός flow of information
+Το έργο αποτελούνταν από τα εξής παραδοτέα:
 
--   Week 2 – Week 6 (30/8 - 30/9): Υλοποίηση εφαρμογής για Android4.4 and above
+ 
 
--   Week 7 (1/10 – 8/10): Υλοποίηση συμβατότητας με Android Wear smart-watches
-    (Notifications)
+Σχεδιασμός για smartphone και smart-watch (περιορισμοί λόγω της μικρής οθόνης) –
+ορισμός flow of information
 
--   Week 8 (8/10 – 15/10): Testing – αξιολόγηση με 10 χρήστες (με το System
-    Usability Scale και το Technology Acceptance Model ). Οι δοκιμές θα γίνουν
-    με το Motorola 360[[9]](<#_ftn9>)
+<https://github.com/ellak-monades-aristeias/REMED/blob/master/deliverables/REMED_del_1_design.md>
+
+ 
+
+Υλοποίηση εφαρμογής για Android4.4 and above
+
+Manual: 
+<https://github.com/ellak-monades-aristeias/REMED/blob/master/deliverables/Deliverable_App%20implementation%20for%20Android4.4%20and%20above%20%E2%80%93%20User%20Manual.md>
+Source code:
+<https://github.com/ellak-monades-aristeias/REMED/tree/master/android_app/Remed>
+
+ 
+
+Υλοποίηση συμβατότητας με Android Wear smart-watches
+
+(Ongoing work), source code:
+<https://github.com/ellak-monades-aristeias/REMED/tree/master/android_app/Remed/wear>
+
+ 
+
+Testing – αξιολόγηση με 10 χρήστες (με το System Usability Scale και το
+Technology Acceptance Model ). Οι δοκιμές θα γίνουν με το Motorola
+360[[9]](<#_ftn9>)
+
+<https://github.com/ellak-monades-aristeias/REMED/blob/master/deliverables/Deliverable_Testing%20%E2%80%93%20evaluation%20with%2010%20users.md>
 
  
 
