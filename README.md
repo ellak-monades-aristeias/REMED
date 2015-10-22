@@ -74,8 +74,7 @@ Source code:
 
  
 
-Testing – αξιολόγηση με 10 χρήστες (με το System Usability Scale και την δική μας έκδοση του Software Usability Measurement Inventory ). Οι δοκιμές θα γίνουν με το Motorola
-360[[9]](<#_ftn9>)
+Testing – αξιολόγηση με 10 χρήστες (με το System Usability Scale και την δική μας έκδοση του Software Usability Measurement Inventory ). 
 
 <https://github.com/ellak-monades-aristeias/REMED/blob/master/deliverables/Deliverable_Testing%20%E2%80%93%20evaluation%20with%2010%20users.md>
 
