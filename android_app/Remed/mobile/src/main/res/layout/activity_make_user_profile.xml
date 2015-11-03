@@ -22,12 +22,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="insert your name"
             android:ems="10"
             android:id="@+id/et1_1_1"
             android:textSize="20dp"
             android:textColor="#0c0c0c"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:hint="Please insert your name" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,12 +47,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="insert your surname"
             android:ems="10"
             android:id="@+id/et1_1_2"
             android:textColor="#0c0c0c"
             android:textSize="20dp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:hint="Please insert your surname" />
 
     </LinearLayout>
 
@@ -74,10 +74,10 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/et1_1_3"
-            android:text="insert your age"
             android:textColor="#0c0c0c"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:hint="Please insert your age" />
     </LinearLayout>
 
     <TextView

@@ -1,6 +1,8 @@
 package com.remed1;
 
+import android.app.AlarmManager;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -18,17 +20,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity
 
 {
 
-
+    public static int totalpills;
+    public static int recievepill;
+    public static int missedpill;
 
     DatabaseHelper myDb;
     Cursor c1;
     ArrayAdapter<String> listAdapter1;
-
+    Cursor per_inf;
 
 
     @Override
@@ -39,11 +44,30 @@ public class MainActivity extends AppCompatActivity
         /////////////////////////////
 
         myDb = new DatabaseHelper(this);
+
+        if(myDb.PercentageIsEmpty() == 0) {
+
+            myDb.insertInitialNumbersPills();
+            totalpills =0;
+            recievepill=0;
+            missedpill=0;
+        }
+        else {
+
+            per_inf = myDb.getPercentageInfo();
+            per_inf.moveToFirst();
+            totalpills = per_inf.getInt(3);
+            recievepill = per_inf.getInt(1);
+            missedpill = per_inf.getInt(2);
+
+        }
+
+
         c1 = myDb.getPillsInfo();
         final ListView mypills = (ListView) findViewById(R.id.lv);
         ArrayList<String> mArrayList = new ArrayList<>();
         for(c1.moveToFirst(); !c1.isAfterLast(); c1.moveToNext()) {
-            // The Cursor is now set to the right position
+
             mArrayList.add(c1.getString(c1.getColumnIndex("Pill_Name"))
                     + " " + c1.getString(c1.getColumnIndex("Starting_Date"))
                     + " " + c1.getString(c1.getColumnIndex("Schedule"))
@@ -61,13 +85,12 @@ public class MainActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
-              //  String value = (String) mypills.getItemAtPosition(position);
-             //  Toast.makeText(MainActivity.this,""+id, Toast.LENGTH_SHORT).show();
+
                Cursor display = myDb.viewMyMeds();
                display.moveToPosition(position);
-        //display.move()
+
                  StringBuffer pills_data = new StringBuffer();
-                 //  while(display.moveToNext()){
+
                        pills_data.append("Id :" + display.getString(0) + "\n");
                        pills_data.append("Pill_Name :" + display.getString(1) + "\n");
                        pills_data.append("Starting_Date :" + display.getString(2) + "\n");
@@ -76,7 +99,7 @@ public class MainActivity extends AppCompatActivity
                        pills_data.append("Shape_Color :" + display.getString(5) + "\n");
                        pills_data.append("Dosage :" + display.getString(6) + "\n");
                        pills_data.append("Instructions :" + display.getString(7) + "\n\n");
-                //   }
+
 
 
                    showData1("PILLS INFO", pills_data.toString());
@@ -84,6 +107,8 @@ public class MainActivity extends AppCompatActivity
 
 
         });
+
+
     }
 
 
@@ -99,7 +124,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = getMenuInflater(); //from activity
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.my_menu, menu);
 
         return true;
@@ -124,8 +149,8 @@ public class MainActivity extends AppCompatActivity
                 startActivity(medications);
                 break;
             case R.id.action_missed_med :  case R.id.mis_med :
-                Intent missedmed = new Intent(MainActivity.this, MyMissedmed.class);
-                startActivity(missedmed);
+                Intent missedmed1 = new Intent(MainActivity.this, MyMissedmed.class);
+                startActivity(missedmed1);
                 break;
             case R.id.action_reports :
                 Intent reports = new Intent(MainActivity.this, MyReports.class);

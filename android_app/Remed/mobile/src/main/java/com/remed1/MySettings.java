@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by ΜΗΤΣΟΣ on 1/10/2015.
@@ -33,4 +34,7 @@ public class MySettings extends AppCompatActivity
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    ////////////////////////////
+
 }

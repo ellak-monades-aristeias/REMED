@@ -74,12 +74,17 @@ public class MyProfile extends AppCompatActivity {
         if (v.getId() == R.id.b1_2) {
             Cursor display = myDb.getUserInfo();
             display.moveToFirst();
-            StringBuffer user_info = new StringBuffer();
-            user_info.append("Name :" + display.getString(0) + "\n");
-            user_info.append("Surname :" + display.getString(1) + "\n");
-            user_info.append("Age :" + display.getString(2) + "\n");
-            user_info.append("Gender :" + display.getString(3) + "\n");
-            showUserInfo("USER INFO", user_info.toString());
+            if(display .getCount()==0) {
+                Toast.makeText(MyProfile.this,"NO DATA FOUND" , Toast.LENGTH_LONG).show();
+            }
+            else {
+                StringBuffer user_info = new StringBuffer();
+                user_info.append("Name :" + display.getString(0) + "\n");
+                user_info.append("Surname :" + display.getString(1) + "\n");
+                user_info.append("Age :" + display.getString(2) + "\n");
+                user_info.append("Gender :" + display.getString(3) + "\n");
+                showUserInfo("USER INFO", user_info.toString());
+            }
 
         }
     }

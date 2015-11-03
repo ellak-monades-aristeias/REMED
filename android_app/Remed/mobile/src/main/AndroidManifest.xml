@@ -9,6 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
+            android:launchMode="singleTask"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,11 @@
         <activity android:name=".MyHelp"></activity>
         <activity android:name=".MyAddmed"></activity>
         <activity android:name=".MyMakeUserProfile"></activity>
-
+        <activity android:name=".NotificationInfos"
+                    android:launchMode="singleTask"></activity>
+        <activity android:name=".MissedNotifications"
+            android:launchMode="singleTask"></activity>
+        <receiver android:name=".AlertMsg"/>
     </application>
 
 </manifest>

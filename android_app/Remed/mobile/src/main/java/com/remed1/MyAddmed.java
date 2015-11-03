@@ -55,6 +55,7 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
     EditText pillname;
     EditText dosage;
    Spinner how_many_times;
+    Spinner quantity_dose;
    Spinner instructions;
     Spinner shape_pill;
     Spinner color_pill;
@@ -76,6 +77,28 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
         pillname = (EditText)findViewById(R.id.editText);
         id = (EditText)findViewById(R.id.editText3);
         dosage = (EditText)findViewById(R.id.editText2);
+        dateView = (TextView) findViewById(R.id.tv3_1_5);
+        btn_set_date = (Button) findViewById(R.id.b3_1_2);
+        btn_set_date.setOnClickListener(this);
+        updateDate();
+
+        timeView = (TextView) findViewById(R.id.tv3_1_9);
+        btn_set_time = (Button)findViewById(R.id.b3_1_6);
+        btn_set_time.setOnClickListener(this);
+        updateTime();
+
+        btn_set_days = (Button) findViewById(R.id.b3_1_3);
+        btn_set_days.setOnClickListener(this);
+        how_many_times = (Spinner) findViewById(R.id.spinner3_1_1);
+        instructions = (Spinner) findViewById(R.id.spinner3_1_3);
+        strings = getResources().getStringArray(R.array.Shapes);
+        strings1 = getResources().getStringArray(R.array.Color_Names);
+        shape_pill = (Spinner)findViewById(R.id.spinner3_1_4);
+        shape_pill.setAdapter(new MyAdapter(MyAddmed.this, R.layout.row, strings));
+        color_pill = (Spinner)findViewById(R.id.spinner3_1_5);
+        color_pill.setAdapter(new MyAdapter1(MyAddmed.this, R.layout.color, strings1));
+
+        quantity_dose = (Spinner)findViewById(R.id.spinner3_1_2);
         //////////////////////////////////////
         ActionBar actionBar = getSupportActionBar();
         if(MyMedications.choise == 1) {
@@ -91,28 +114,30 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
         if(MyMedications.choise == 3) {
             actionBar.setTitle("DELETE MED");
             actionBar.setDisplayHomeAsUpEnabled(true);
+            dateView.setVisibility(View.INVISIBLE);
+            timeView.setVisibility(View.INVISIBLE);
+            btn_set_time.setVisibility(View.INVISIBLE);
+            btn_set_date.setVisibility(View.INVISIBLE);
+            btn_set_days.setVisibility(View.INVISIBLE);
+            pillname.setVisibility(View.INVISIBLE);
+            dosage.setVisibility(View.INVISIBLE);
+            how_many_times.setVisibility(View.INVISIBLE);
+            quantity_dose.setVisibility(View.INVISIBLE);
+            instructions.setVisibility(View.INVISIBLE);
+            shape_pill.setVisibility(View.INVISIBLE);
+            color_pill.setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_1).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_2).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_3).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_4).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_6).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_7).setVisibility(View.INVISIBLE);
+            findViewById(R.id.tv3_1_8).setVisibility(View.INVISIBLE);
+
+
         }
 
-        dateView = (TextView) findViewById(R.id.tv3_1_5);
-        btn_set_date = (Button) findViewById(R.id.b3_1_2);
-        btn_set_date.setOnClickListener(this);
-        updateDate();
 
-        timeView = (TextView) findViewById(R.id.tv3_1_9);
-        btn_set_time = (Button)findViewById(R.id.b3_1_6);
-        btn_set_time.setOnClickListener(this);
-        updateTime();
-
-        btn_set_days = (Button) findViewById(R.id.b3_1_3);
-        btn_set_days.setOnClickListener(this);
-        how_many_times = (Spinner) findViewById(R.id.spinner3_1_1);
-        instructions = (Spinner) findViewById(R.id.spinner3_1_3);
-         strings = getResources().getStringArray(R.array.Shapes);
-        strings1 = getResources().getStringArray(R.array.Color_Names);
-        shape_pill = (Spinner)findViewById(R.id.spinner3_1_4);
-        shape_pill.setAdapter(new MyAdapter(MyAddmed.this, R.layout.row, strings));
-        color_pill = (Spinner)findViewById(R.id.spinner3_1_5);
-        color_pill.setAdapter(new MyAdapter1(MyAddmed.this, R.layout.color, strings1));
     }
 
 
@@ -155,7 +180,8 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
             @Override
             public boolean onMenuItemClick(MenuItem item) {
 
-                MyAddmed.this.saveData();
+               if( MyAddmed.this.saveData())
+                   MyAddmed.this.finish();
                 return false;
             }
         });
@@ -167,7 +193,8 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
 
-                    MyAddmed.this.updateData();
+                   if( MyAddmed.this.updateData())
+                       MyAddmed.this.finish();
                     return false;
                 }
             });
@@ -182,8 +209,8 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
 
-                    MyAddmed.this.deleteData();
-
+                    if(MyAddmed.this.deleteData())
+                        MyAddmed.this.finish();
                     return false;
                 }
             });
@@ -193,36 +220,42 @@ public class MyAddmed extends AppCompatActivity implements View.OnClickListener 
         return true;
    }
 /////////////////////////////////
-    public  void deleteData()
+    public  boolean deleteData()
     {
         Integer deleterows = myDb.removeData(id.getText().toString());
-        if(deleterows>0)
+        if(deleterows>0) {
             Toast.makeText(MyAddmed.this, "DATA DELETED", Toast.LENGTH_LONG).show();
-        else
+        return true;}
+        else{
+            Toast.makeText(MyAddmed.this, "Please fill all the fields...", Toast.LENGTH_LONG).show();
             Toast.makeText(MyAddmed.this, "DATA NOT DELETED", Toast.LENGTH_LONG).show();
+        return false;}
     }
 
     //////////////////////////////
-    public void saveData(){
+    public boolean saveData(){
 
        boolean isInserted = myDb.insertData(pillname.getText().toString(),
                dateView.getText().toString(),
                timeView.getText().toString(),
-               how_many_times.getSelectedItem().toString(),
+               how_many_times.getSelectedItem().toString() ,
                shape_pill.getSelectedItem().toString() + " / "
                 + color_pill.getSelectedItem().toString(),
-               dosage.getText().toString(),
+               dosage.getText().toString() + "  " + quantity_dose.getSelectedItem().toString(),
                instructions.getSelectedItem().toString()
        );
-        if(isInserted)
+        if(isInserted){
             Toast.makeText(MyAddmed.this, "DATA INSERTED", Toast.LENGTH_LONG).show();
-        else
+        return true;}
+        else {
+           Toast.makeText(MyAddmed.this, "Please fill all the fields...", Toast.LENGTH_LONG).show();
            Toast.makeText(MyAddmed.this, "DATA NOT INSERTED", Toast.LENGTH_LONG).show();
+        return false;}
 
 
     }
 ////////////////////////////////////////////////
-public void updateData() {
+public boolean updateData() {
 
     boolean isEdit = myDb.editData(id.getText().toString(),
             pillname.getText().toString(),
@@ -231,12 +264,15 @@ public void updateData() {
             how_many_times.getSelectedItem().toString(),
             shape_pill.getSelectedItem().toString() + " / "
                     + color_pill.getSelectedItem().toString(),
-            dosage.getText().toString(),
+            dosage.getText().toString() + "  " + quantity_dose.getSelectedItem().toString(),
             instructions.getSelectedItem().toString());
-    if (isEdit)
+    if (isEdit){
         Toast.makeText(MyAddmed.this, "DATA UPDATE", Toast.LENGTH_LONG).show();
-    else
+        return true;}
+    else{
+        Toast.makeText(MyAddmed.this, "Please fill all the fields...", Toast.LENGTH_LONG).show();
         Toast.makeText(MyAddmed.this, "DATA NOT UPDATE", Toast.LENGTH_LONG).show();
+        return false;}
 }
     ////////////////////////////////
 

@@ -45,7 +45,7 @@ public class MyPillbox extends AppCompatActivity
         ListView lvItems = (ListView) findViewById(R.id.lv1);
         ArrayList<String> mArrayList = new ArrayList<>();
         for(c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
-            mArrayList.add(c.getString(c.getColumnIndex("Pill_Name"))+ " keno " + c.getString(c.getColumnIndex("Dosage")) );
+            mArrayList.add(c.getString(c.getColumnIndex("Pill_Name"))+ " " + c.getString(c.getColumnIndex("Dosage")) );
         }
 
         listAdapter = new ArrayAdapter<String>(MyPillbox.this,
